@@ -8,3 +8,7 @@ GENERATING MODEL LIGHTCURVES
 2) Using the code 'most_detectable_systems.py' further find the systems with the top 10 highest median moon-transit-depth for both resonant and non-resonant systems and for each moon-number = 1,2,3,4,5. This gives total 100 systems and these were used to generate 100 simulated lightcurves. 
 3) Using 'save_unpacked_systems_details.py', unpack and save system architecture details of the 100 systems. (Note: the values of parameters 'w_bary' and 'Omega_moon' were randonmly chosen in the 'best_transit_fraction_systems.py' code and the values are saved in 'best_transit_fraction_systems.txt'.)
 4) Using 'save_model_LCs.py', generate and save the model lightcurves using Pandora for the 100 systems. 
+
+SELECTING GOOD KEPLER LIGHTCURVES
+
+1) Given list of Kepler IDs of lightcurves without any planet, using 'dw_statistic_filter.py' filter out the lightcurves for which the Durbin-Watson statistic after detrending is between 1.5 and 2.5.
