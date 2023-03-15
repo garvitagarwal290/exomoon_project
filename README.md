@@ -29,3 +29,15 @@ MODELING
 
 The code 'modeling.py' runs the model fitting on the simulated lightcurves using the nested sampler Ultranest. 
 
+
+Following steps were taken to generate the simulated lightcurves for the fixed-SNR runs-
+
+
+SAVING THE LIGHTCURVE TRENDS
+
+Since I didnt save the trends of the lightcurves when I made the mixed-SNR lightcurves, I had to do that separately later using the script 'save_trends.py'. The script detrends the 100 kepler lightcurves using cofiam and saves them in files.
+
+GENERATING THE FIXED SNR LIGHTCURVES
+
+The script 'modify_SNR.py' first modifies the noise in the kepler lightcurves using the trends saved earlier and the target fixed SNR value. Then it performs the injection of the model lightcurve on to the modified Kepler lightcurve exactly like 'injeciton.py'. The new 100 lightcurves are then ready to be model-fitted by an appropriately modified 'modeling.py' script. 
+
