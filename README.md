@@ -25,3 +25,7 @@ INJECTION
 
 The code 'injection.py' finally injects the model LC of each of the 100 systems in the Kepler LC as mentioned in the catalogue.txt file. The 100 final lightcurves are saved.
 
+MODELING
+
+The code 'modeling.py' runs the model fitting on the simulated lightcurves using the nested sampler Ultranest. 
+
