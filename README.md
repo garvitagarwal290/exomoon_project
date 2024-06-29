@@ -1,5 +1,7 @@
 # exomoon_project
 
+Paper: https://academic.oup.com/mnras/article/529/2/1232/7617719
+
 Here is an explanation of the steps that were taken to generate the simulated lightcurves in the mixed-SNR runs-
 
 
